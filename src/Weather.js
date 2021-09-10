@@ -37,28 +37,28 @@ export default function Weather(props) {
 
       <div className="row">
         <div className="col-sm-2">
-          <div>Fri</div>
+          <div>Mon</div>
           <div>
             <canvas width="38" height="38" />
           </div>
           <div>24°C</div>
         </div>
         <div className="col-sm-2">
-          <div>Fri</div>
+          <div>Tue</div>
           <div>
             <canvas width="38" height="38" />
           </div>
           <div>24°C</div>
         </div>
         <div className="col-sm-2">
-          <div>Fri</div>
+          <div>Wed</div>
           <div>
             <canvas width="38" height="38" />
           </div>
           <div>24°C</div>
         </div>
         <div className="col-sm-2">
-          <div>Fri</div>
+          <div>Thu</div>
           <div>
             <canvas width="38" height="38" />
           </div>
