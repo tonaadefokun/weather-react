@@ -4,19 +4,19 @@ import Loader from "react-loader-spinner";
 
 export default function Weather(props) {
   return (
-    <div>
-      <ul>
-        <li>Lisbon</li>
-        <li>Paris</li>
-        <li>Sydney</li>
-        <li>Lagos</li>
+    <div className="container">
+      <ul className="navigation-items">
+        <li className="navigation-item">Lisbon</li>
+        <li className="navigation-item">Paris</li>
+        <li className="navigation-item">Sydney</li>
+        <li className="navigation-item">Lagos</li>
       </ul>
       <div>
         <form>
           <input type="text" placeholder="Enter a city" />
           <input type="submit" value="Search" />
         </form>
-        <button>Current</button>
+        <button className="btn btn-primary">Current</button>
       </div>
       <div>
         <div>
