@@ -3,23 +3,84 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 
 export default function Weather(props) {
-  function displayForecast(response) {
-    alert(`The weather in ${response.data.name} is ${response.data.main.temp}`);
-  }
-  let apiKey = "5d28e41830862bc850144acfa82e7516";
-
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayForecast);
-
   return (
     <div>
-      <Loader
-        type="Puff"
-        color="orange"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-      />{" "}
+      <ul>
+        <li>Lisbon</li>
+        <li>Paris</li>
+        <li>Sydney</li>
+        <li>Lagos</li>
+      </ul>
+      <div>
+        <form>
+          <input type="text" placeholder="Enter a city" />
+          <input type="submit" value="Search" />
+        </form>
+        <button>Current</button>
+      </div>
+      <div>
+        <div>
+          <h1>Lisbon</h1>
+          <div>Thursday 21:23</div>
+          <div>Clouds</div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <div>21°C</div>
+        </div>
+        <div className="col">
+          <div>Precipitation: 78%</div>
+          <div>Wind: 2km/h</div>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-sm-2">
+          <div>Fri</div>
+          <div>
+            <canvas width="38" height="38" />
+          </div>
+          <div>24°C</div>
+        </div>
+        <div className="col-sm-2">
+          <div>Fri</div>
+          <div>
+            <canvas width="38" height="38" />
+          </div>
+          <div>24°C</div>
+        </div>
+        <div className="col-sm-2">
+          <div>Fri</div>
+          <div>
+            <canvas width="38" height="38" />
+          </div>
+          <div>24°C</div>
+        </div>
+        <div className="col-sm-2">
+          <div>Fri</div>
+          <div>
+            <canvas width="38" height="38" />
+          </div>
+          <div>24°C</div>
+        </div>
+        <div className="col-sm-2">
+          <div>Fri</div>
+          <div>
+            <canvas width="38" height="38" />
+          </div>
+          <div>24°C</div>
+        </div>
+      </div>
+      <small>
+        <a href="#" target="_blank">
+          Open weather app
+        </a>{" "}
+        from{" "}
+        <a href="#" target="_blank">
+          Adefokun Adetona G
+        </a>
+      </small>
     </div>
   );
 }
